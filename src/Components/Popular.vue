@@ -3,8 +3,8 @@ import { computed } from "vue";
 import Heading from "@/Components/Heading.vue";
 import Card from "@/Components/Card.vue";
 import AlternativeRow from "@/Components/AlternativeRow.vue";
-import Products from "@/json/Products.json";
-import Mapping from "@/json/Mapping.json";
+import Products from "@/json/products.json";
+import Mapping from "@/json/mapping.json";
 
 const getRandomMappingsByCategory = () => {
   const mappingsByCategory = {};
