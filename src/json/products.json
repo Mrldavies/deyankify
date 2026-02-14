@@ -1,0 +1,13 @@
+[
+  { "id": "gmail", "name": "Gmail", "showName": true, "country": "us", "categories": ["email"]},
+  { "id": "outlook", "name": "Outlook", "showName": true, "country": "us", "categories": ["email"]},
+  { "id": "proton-mail", "name": "Proton Mail", "showName": false, "country": "ch", "categories": ["email"]},
+  { "id": "tuta", "name": "Tuta", "showName": false, "country": "de", "categories": ["email"]},
+  { "id": "mailfence", "name": "Mailfence", "showName": false, "country": "be", "categories": ["email"]},
+  { "id": "ms-teams", "name": "Microsoft Teams", "showName": true, "country": "us", "categories": ["video call"]},
+  { "id": "proton-meet", "name": "Proton Meet", "showName": true, "country": "ch", "categories": ["video call"]},
+  { "id": "ms-365", "name": "Microsoft 365", "showName": true, "country": "us", "categories": ["office suit"]},
+  { "id": "libre-office", "name": "Libre Office", "showName": false, "country": "de", "categories": ["office suit"]},
+  { "id": "google-fonts", "name": "Google Fonts", "showName": true, "country": "us", "categories": ["typography"]},
+  { "id": "bunny", "name": "Bunny.net", "showName": false, "country": "si", "categories": ["typography"]}
+]

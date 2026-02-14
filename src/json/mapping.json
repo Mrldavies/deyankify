@@ -1,0 +1,11 @@
+[
+  { "from": "gmail", "to": "proton-mail" },
+  { "from": "gmail", "to": "tuta" },
+  { "from": "outlook", "to": "proton-mail" },
+  { "from": "outlook", "to": "tuta" },
+  { "from": "ms-teams", "to": "proton-meet" },
+  { "from": "outlook", "to": "mailfence" },
+  { "from": "gmail", "to": "mailfence" },
+  { "from": "ms-365", "to": "libre-office" },
+  { "from": "google-fonts", "to": "bunny" }
+]
