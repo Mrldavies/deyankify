@@ -33,9 +33,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      # If you want the custom domain to be applied automatically:
-      - name: Add CNAME
-        run: cp CNAME dist/CNAME
+      - name: Copy CNAME into dist (if present)
+        run: |
+          if [ -f CNAME ]; then cp CNAME dist/CNAME; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
