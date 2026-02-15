@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite-ssg build",
-    "preview": "vite preview",
+    "build": "vite-ssg build && npm run svgo:dist",
+    "svgo:dist": "svgo -f dist -r",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
@@ -30,6 +30,7 @@
     "npm-run-all2": "^8.0.4",
     "oxfmt": "^0.27.0",
     "oxlint": "~1.42.0",
+    "svgo": "^4.0.0",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.5"
   },
