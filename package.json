@@ -1,11 +1,11 @@
 {
   "name": "deyankify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
@@ -13,10 +13,9 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
-    "@blade-flags/core": "^0.1.1",
-    "@blade-flags/vue": "^0.1.1",
     "@tailwindcss/vite": "^4.1.18",
     "tailwindcss": "^4.1.18",
+    "vite-ssg": "^28.3.0",
     "vue": "^3.5.27",
     "vue-router": "^5.0.1"
   },

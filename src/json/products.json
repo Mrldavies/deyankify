@@ -1,13 +1,120 @@
 [
-  { "id": "gmail", "name": "Gmail", "showName": true, "country": "us", "categories": ["email"]},
-  { "id": "outlook", "name": "Outlook", "showName": true, "country": "us", "categories": ["email"]},
-  { "id": "proton-mail", "name": "Proton Mail", "showName": false, "country": "ch", "categories": ["email"]},
-  { "id": "tuta", "name": "Tuta", "showName": false, "country": "de", "categories": ["email"]},
-  { "id": "mailfence", "name": "Mailfence", "showName": false, "country": "be", "categories": ["email"]},
-  { "id": "ms-teams", "name": "Microsoft Teams", "showName": true, "country": "us", "categories": ["video call"]},
-  { "id": "proton-meet", "name": "Proton Meet", "showName": true, "country": "ch", "categories": ["video call"]},
-  { "id": "ms-365", "name": "Microsoft 365", "showName": true, "country": "us", "categories": ["office suit"]},
-  { "id": "libre-office", "name": "Libre Office", "showName": false, "country": "de", "categories": ["office suit"]},
-  { "id": "google-fonts", "name": "Google Fonts", "showName": true, "country": "us", "categories": ["typography"]},
-  { "id": "bunny", "name": "Bunny.net", "showName": false, "country": "si", "categories": ["typography"]}
+  {
+    "id": "gmail",
+    "name": "Gmail",
+    "showName": true,
+    "country": "us",
+    "categories": [
+      { "slug": "email", "label": "Email Services" }
+    ]
+  },
+  {
+    "id": "outlook",
+    "name": "Outlook",
+    "showName": true,
+    "country": "us",
+    "categories": [
+      { "slug": "email", "label": "Email Services" }
+    ]
+  },
+  {
+    "id": "proton-mail",
+    "name": "Proton Mail",
+    "showName": false,
+    "country": "ch",
+    "categories": [
+      { "slug": "email", "label": "Email Services" }
+    ]
+  },
+  {
+    "id": "tuta",
+    "name": "Tuta",
+    "showName": false,
+    "country": "de",
+    "popular": true,
+    "categories": [
+      { "slug": "email", "label": "Email Services" }
+    ]
+  },
+  {
+    "id": "mailfence",
+    "name": "Mailfence",
+    "showName": false,
+    "country": "be",
+    "categories": [
+      { "slug": "email", "label": "Email Services" }
+    ]
+  },
+  {
+    "id": "ms-teams",
+    "name": "Microsoft Teams",
+    "showName": true,
+    "country": "us",
+    "categories": [
+      { "slug": "video-call", "label": "Video Call" }
+    ]
+  },
+  {
+    "id": "proton-meet",
+    "name": "Proton Meet",
+    "showName": true,
+    "country": "ch",
+    "categories": [
+      { "slug": "video-call", "label": "Video Call" }
+    ]
+  },
+  {
+    "id": "ms-365",
+    "name": "Microsoft 365",
+    "showName": true,
+    "country": "us",
+    "categories": [
+      { "slug": "office-suite", "label": "Office Suite" }
+    ]
+  },
+  {
+    "id": "libre-office",
+    "name": "Libre Office",
+    "showName": false,
+    "country": "de",
+    "categories": [
+      { "slug": "office-suite", "label": "Office Suite" }
+    ]
+  },
+  {
+    "id": "google-fonts",
+    "name": "Google Fonts",
+    "showName": true,
+    "country": "us",
+    "categories": [
+      { "slug": "typography", "label": "Typography" }
+    ]
+  },
+  {
+    "id": "bunny",
+    "name": "Bunny.net",
+    "showName": false,
+    "country": "si",
+    "categories": [
+      { "slug": "typography", "label": "Typography" }
+    ]
+  },
+  {
+    "id": "autodesk-maya",
+    "name": "Autodesk Maya",
+    "showName": true,
+    "country": "us",
+    "categories": [
+      { "slug": "3d", "label": "3D Software" }
+    ]
+  },
+  {
+    "id": "blender",
+    "name": "Blender",
+    "showName": true,
+    "country": "nl",
+    "categories": [
+      { "slug": "3d", "label": "3D Software" }
+    ]
+  }
 ]

@@ -1,7 +1,7 @@
 <script setup>
-import Flag from "@/Components/Flag.vue";
+import ComparisonProduct from "@/Components/ComparisonProduct.vue";
 
-const props = defineProps({
+defineProps({
   fromProduct: {
     type: Object,
     required: true,
@@ -11,10 +11,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-const getLogoPath = (productId) => {
-  return `/assets/${productId}.svg`;
-};
 </script>
 
 <template>
@@ -22,26 +18,13 @@ const getLogoPath = (productId) => {
     class="p-2 md:p-3 flex items-center border-b border-r border-steel bg-white hover:bg-azure cursor-pointer transition-color duration-300 ease-linear"
     href="#"
   >
-    <div class="flex justify-between gap-8 flex-1 items-center pr-8">
-      <div class="flex items-center gap-3 min-w[150px]">
-        <img
-          class="h-6 max-w-24"
-          :src="getLogoPath(fromProduct.id)"
-          :alt="`${fromProduct.name} Logo`"
-        />
-        <div class="text-xs md:text-base" v-if="fromProduct.showName">{{ fromProduct.name }}</div>
-      </div>
-      <div><img class="w-8" src="/assets/r-arrow.svg" alt="" /></div>
-      <div class="flex items-center gap-3">
-        <img
-          class="h-6 max-w-24"
-          :src="getLogoPath(toProduct.id)"
-          :alt="`${toProduct.name} Logo`"
-        />
-        <div class="text-xs md:text-base" v-if="toProduct.showName">{{ toProduct.name }}</div>
-        <Flag :country="toProduct.country" />
+    <div class="flex justify-between xs:grid xs:grid-cols-8 gap-2 sm:gap-8 items-center w-full">
+      <ComparisonProduct :product="fromProduct" />
+      <img class="w-4 xs:w-8 flex-none" src="/assets/r-arrow.svg" alt="" />
+      <ComparisonProduct :product="toProduct" />
+      <div class="flex justify-end">
+        <img class="w-4 xs:w-6" src="/assets/r-chevron.svg" alt="" />
       </div>
     </div>
-    <div><img class="w-6" src="/assets/r-chevron.svg" alt="" /></div>
   </a>
 </template>

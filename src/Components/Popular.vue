@@ -6,43 +6,49 @@ import AlternativeRow from "@/Components/AlternativeRow.vue";
 import Products from "@/json/products.json";
 import Mapping from "@/json/mapping.json";
 
-const getRandomMappingsByCategory = () => {
-  const mappingsByCategory = {};
+const productById = Object.fromEntries(Products.map((p) => [p.id, p]));
 
-  Mapping.forEach((mapping) => {
-    const fromProduct = Products.find((p) => p.id === mapping.from);
-    if (fromProduct && fromProduct.categories) {
-      fromProduct.categories.forEach((category) => {
-        if (!mappingsByCategory[category]) {
-          mappingsByCategory[category] = [];
-        }
-        mappingsByCategory[category].push(mapping);
-      });
-    }
-  });
-
-  const randomMappings = [];
-  Object.keys(mappingsByCategory).forEach((category) => {
-    const categoryMappings = mappingsByCategory[category];
-    const randomIndex = Math.floor(Math.random() * categoryMappings.length);
-    randomMappings.push(categoryMappings[randomIndex]);
-  });
-
-  return randomMappings;
-};
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 const displayMappings = computed(() => {
-  const randomMappings = getRandomMappingsByCategory();
+  const mappingsByCategory = {};
 
-  return randomMappings.map((mapping) => {
-    const fromProduct = Products.find((p) => p.id === mapping.from);
-    const toProduct = Products.find((p) => p.id === mapping.to);
+  for (const mapping of Mapping) {
+    const fromProduct = productById[mapping.from];
+    if (!fromProduct?.categories) continue;
+
+    for (const category of fromProduct.categories) {
+      const { slug, label } = category;
+
+      if (!mappingsByCategory[slug]) {
+        mappingsByCategory[slug] = {
+          label,
+          mappings: [],
+        };
+      }
+
+      mappingsByCategory[slug].mappings.push(mapping);
+    }
+  }
+
+  const result = Object.values(mappingsByCategory).map((categoryGroup) => {
+    const randomMapping =
+      categoryGroup.mappings[Math.floor(Math.random() * categoryGroup.mappings.length)];
 
     return {
-      from: fromProduct,
-      to: toProduct,
+      category: categoryGroup.label,
+      from: productById[randomMapping.from],
+      to: productById[randomMapping.to],
     };
   });
+
+  return shuffle(result);
 });
 </script>
 

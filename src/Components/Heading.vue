@@ -14,13 +14,13 @@ const classes = computed(() => {
     case "h1":
       return "text-4xl font-bold tracking-tight";
     case "h3":
-      return "text-xl font-bold";
+      return "text-lg font-bold";
     case "h4":
       return "text-xl font-medium";
     case "h5":
       return "text-lg font-medium";
     default:
-      return "text-2xl font-bold";
+      return "text-base xs:text-xl md:text-2xl font-bold";
   }
 });
 </script>

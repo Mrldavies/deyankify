@@ -1,14 +1,15 @@
 <script setup>
-import { Flag } from "@blade-flags/vue";
-import { flatFlags } from "@blade-flags/core/flags/flat";
-
 defineProps({
   country: String,
 });
 </script>
 
 <template>
-  <div class="w-6">
-    <Flag :code="country" :flags="flatFlags" />
-  </div>
+  <img
+    v-if="country"
+    :src="`/assets/${country}.svg`"
+    alt=""
+    class="object-contain w-4 xs:w-6 border-1 border-steel"
+    loading="lazy"
+  />
 </template>
