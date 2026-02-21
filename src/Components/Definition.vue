@@ -1,7 +1,7 @@
 <template>
   <p class="text-center text-base sm:text-xl max-w-3xl mx-auto pb-3">
-    <strong>Deyankification</strong> (n.) The process of switching from American tech products and
-    services to European alternatives to reduce reliance on US tech giants.
+    <strong>Deyankification</strong> (n.) The process of reducing reliance on dominant US tech
+    platforms by choosing European alternatives.
   </p>
 
   <p class="text-center text-xs sm:text-base max-w-3xl mx-auto">

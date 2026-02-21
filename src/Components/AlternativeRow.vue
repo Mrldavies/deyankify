@@ -21,7 +21,7 @@ defineProps({
     <div class="flex justify-between xs:grid xs:grid-cols-8 gap-2 sm:gap-8 items-center w-full">
       <ComparisonProduct :product="fromProduct" />
       <img class="w-4 xs:w-8 flex-none" src="/assets/r-arrow.svg" alt="" />
-      <ComparisonProduct :product="toProduct" />
+      <ComparisonProduct :product="toProduct" :flag="true" />
       <div class="flex justify-end">
         <img class="w-4 xs:w-6" src="/assets/r-chevron.svg" alt="" />
       </div>

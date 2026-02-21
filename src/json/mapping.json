@@ -6,6 +6,6 @@
   { "from": "ms-teams", "to": "proton-meet" },
   { "from": "outlook", "to": "mailfence" },
   { "from": "gmail", "to": "mailfence" },
-  { "from": "ms-365", "to": "libre-office" },
+  { "from": "ms-office", "to": "libre-office" },
   { "from": "google-fonts", "to": "bunny" }
 ]

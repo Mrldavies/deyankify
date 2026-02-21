@@ -10,7 +10,7 @@
   },
   {
     "id": "outlook",
-    "name": "Outlook",
+    "name": "Outlook.com",
     "showName": true,
     "country": "us",
     "categories": [
@@ -20,7 +20,7 @@
   {
     "id": "proton-mail",
     "name": "Proton Mail",
-    "showName": false,
+    "showName": true,
     "country": "ch",
     "categories": [
       { "slug": "email", "label": "Email Services" }
@@ -28,8 +28,8 @@
   },
   {
     "id": "tuta",
-    "name": "Tuta",
-    "showName": false,
+    "name": "Tuta Mail",
+    "showName": true,
     "country": "de",
     "popular": true,
     "categories": [
@@ -39,7 +39,7 @@
   {
     "id": "mailfence",
     "name": "Mailfence",
-    "showName": false,
+    "showName": true,
     "country": "be",
     "categories": [
       { "slug": "email", "label": "Email Services" }
@@ -64,8 +64,8 @@
     ]
   },
   {
-    "id": "ms-365",
-    "name": "Microsoft 365",
+    "id": "ms-office",
+    "name": "Microsoft Office",
     "showName": true,
     "country": "us",
     "categories": [
@@ -75,7 +75,7 @@
   {
     "id": "libre-office",
     "name": "Libre Office",
-    "showName": false,
+    "showName": true,
     "country": "de",
     "categories": [
       { "slug": "office-suite", "label": "Office Suite" }
@@ -92,8 +92,8 @@
   },
   {
     "id": "bunny",
-    "name": "Bunny.net",
-    "showName": false,
+    "name": "Fonts Bunny",
+    "showName": true,
     "country": "si",
     "categories": [
       { "slug": "typography", "label": "Typography" }
